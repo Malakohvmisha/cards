@@ -1,14 +1,16 @@
 {
   "name": "cards",
   "version": "1.0.0",
-  "description": "",
+  "description": "cards",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Malakhov Misha",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2"
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^1.8.1"
   }
 }
