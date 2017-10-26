@@ -6,15 +6,23 @@ let win;
 
 function createWindow() {
     win = new BrowserWindow({
-        frame: false,
         width: 1100,
         height: 800,
         minWidth: 800,
-        minHeight: 800
+        minHeight: 800,
+        // frame: false,
+        // toolbar: false,
+        resizable: true,
+        show: false
+    });
+
+    win.once('ready-to-show', () => {
+        win.focus();
+        win.show();
     });
 
     win.loadURL(url.format({
-        pathname: path.join(__dirname, 'app/html', 'main.html'),
+        pathname: path.join(__dirname, 'html', 'main.html'),
         protocol: 'file:',
         slashes: true
     }));
@@ -25,6 +33,7 @@ function createWindow() {
 }
 
 app.on('ready', createWindow);
+
 
 app.on('window-all-closed', () => {
    if (process.platform !== 'darwin') {
