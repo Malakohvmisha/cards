@@ -1,0 +1,41 @@
+.win {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    .win__main {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .win__bottom {
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+        width: 100%;
+        height: 25rem;
+    
+        background-color: rgb(240, 240, 240);
+
+
+        .progress-wrap {
+            background-color: rgb(209, 26, 26);
+            .h_clearfix;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            // float: left;
+            width: 50rem;
+            height: 100%;
+        }
+
+        .menu-wrap {
+            background-color: grey;
+            flex: 1;
+        }
+    }
+}

@@ -22,7 +22,7 @@ function createWindow() {
     });
 
     win.loadURL(url.format({
-        pathname: path.join(__dirname, 'html', 'main.html'),
+        pathname: path.join(__dirname, 'dist', 'index.html'),
         protocol: 'file:',
         slashes: true
     }));
