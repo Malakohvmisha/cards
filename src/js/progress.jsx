@@ -1,6 +1,6 @@
 let React = require('react');
 
-export default class Progress extends React.Component {
+export class Progress extends React.Component {
   render() {
     return (
       <div className="progress-wrap">

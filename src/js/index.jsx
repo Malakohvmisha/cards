@@ -1,11 +1,9 @@
 let React = require('react');
 let ReactDOM  = require('react-dom');
-let WindowArea = require('./window-area.jsx');
-let MainArea = require('./main-area.jsx');
-let BottomArea = require('./bottom-area.jsx');
 
-let Progress = require('./progress.jsx');
-let Menu = require('./menu.jsx');
+let {WindowArea, MainArea, BottomArea} = require('./areas.jsx');
+let {Progress} = require('./progress.jsx');
+let {Menu} = require('./menu.jsx');
 
 let menuItems = [
     {
@@ -36,7 +34,7 @@ ReactDOM.render(
             <p>Main window!</p>
         </MainArea>
         <BottomArea>
-            <Progress />
+            <Progress/>
             <Menu items={menuItems} />
         </BottomArea>
     </WindowArea>

@@ -1,7 +1,7 @@
 let React = require('react');
 let PropTypes = require('prop-types');
 
-export default class Menu extends React.Component {
+export class Menu extends React.Component {
     static propTypes = {
         items: PropTypes.arrayOf(
             PropTypes.shape({
