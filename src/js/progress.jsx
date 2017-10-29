@@ -1,6 +1,6 @@
 let React = require('react');
 
-class Progress extends React.Component {
+export default class Progress extends React.Component {
   render() {
     return (
       <div className="progress-wrap">
@@ -11,5 +11,3 @@ class Progress extends React.Component {
     );
   }
 }
-
-module.exports = Progress;

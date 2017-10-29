@@ -18,7 +18,7 @@ const webpackConfig = {
 	},
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		publicPath: "/",
+		// publicPath: "/",
 		filename: "[name]-[hash].js",
 		library: "[name]"
 	},

@@ -1,6 +1,6 @@
 let React = require('react');
 
-class WindowArea extends React.Component {
+export default class WindowArea extends React.Component {
   render() {
     return (
       <div className="win">
@@ -9,5 +9,3 @@ class WindowArea extends React.Component {
     );
   }
 }
-
-module.exports = WindowArea;

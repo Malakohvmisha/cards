@@ -1,6 +1,6 @@
 let React = require('react');
 
-class MainArea extends React.Component {
+export default class MainArea extends React.Component {
   render() {
     return (
       <div className="win__main">
@@ -9,5 +9,3 @@ class MainArea extends React.Component {
     );
   }
 }
-
-module.exports = MainArea;

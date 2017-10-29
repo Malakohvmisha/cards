@@ -1,6 +1,6 @@
 let React = require('react');
 
-class BottomArea extends React.Component {
+export default class BottomArea extends React.Component {
   render() {
     return (
       <div className="win__bottom">
@@ -9,5 +9,3 @@ class BottomArea extends React.Component {
     );
   }
 }
-
-module.exports = BottomArea;
